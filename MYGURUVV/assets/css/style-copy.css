@@ -1,0 +1,81 @@
+/*Inter Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Raleway*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+ body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+.bg-light-blue {
+  background: radial-gradient(circle at top left, #e0f7ff 0%, #ffffff 100%);
+}
+
+.gradient-text {
+      background: linear-gradient(to right, #ff416c, #9b59b6, #00aaff);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+.icon-img {
+      width: 80px;
+      position: absolute;
+      z-index: 0;
+    }
+
+.topleft { 
+        top: 100px;
+        left: 100px; }
+    .topright { top: 100px; right: 100px; }
+    .bottomleft { bottom: 100px; left: 100px; }
+    .bottomright { bottom: 100px; right: 100px; }
+
+    @media (max-width: 768px) {
+      .icon-img {
+        display: none;
+      }
+    }
+
+    .vote-btn {
+      background: linear-gradient(to right, #00aaff, #62d6ff);
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 30px;
+      border: none;
+      font-weight: 600;
+      
+    }
+  
+
+ .about strong{
+	 font-size: 30px;
+	 font-weight: bold;
+      background: linear-gradient(to right,#ff416c,#8e44ad,#3498db);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+	  margin-top:0px;
+	  margin-bottom:0px;
+ }
+ .about h2{
+	 font-size:15px;
+ }
+ .about-image {
+  position:relative;
+  border:1px solid none;
+
+  border-radius: 10px;
+        
+ } 
+ .about {
+       
+        text-align: left;
+        margin:auto;
+ } 
+.img-fluid rounded shadow-sm {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

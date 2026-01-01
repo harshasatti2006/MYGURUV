@@ -1,0 +1,72 @@
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    width: auto;
+}
+/* Mobile styles */
+@media (max-width: 767.98px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: 75%;
+    z-index: 1000;
+    height: 100%;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 900;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-content {
+    margin:0px;
+    padding: 2rem;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
+
+      footer.custom-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+
+  /* Align footer with content area, not full width */
+  margin-left: auto;
+  margin-right: 0;
+  width: calc(100% - 314px); /* Adjust based on sidebar width */
+}

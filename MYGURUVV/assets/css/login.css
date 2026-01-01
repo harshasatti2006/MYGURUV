@@ -1,0 +1,81 @@
+
+
+
+ body {
+      margin: 0;
+      padding: 0;
+      
+    }
+.bg-login{
+   font-family: 'Raleway', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(120deg, #e0f7fa, #f1f8ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+}
+
+  
+    /* Animated blob shapes */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.4;
+      animation: float 10s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    .blob1 {
+      width: 300px;
+      height: 300px;
+      background: #00a5ff;
+      top: -100px;
+      left: -100px;
+    }
+
+    .blob2 {
+      width: 200px;
+      height: 200px;
+      background: #62d6ff;
+      bottom: -80px;
+      right: -60px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(30px); }
+    }
+
+    /* Glassmorphism Card */
+    .login-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .btn-login {
+      background-color: #00a5ff;
+      border: none;
+    }
+
+    .btn-login:hover {
+      background-color: #0090e0;
+    }
+
+   

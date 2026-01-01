@@ -1,0 +1,400 @@
+/*Raleway*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header css */
+
+header {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header .color-nav {
+    color: #333;
+
+}
+
+/* Mobile menu default (collapsed) */
+.navbar-collapse {
+    background-color: transparent;
+    transition: background-color 0s ease;
+}
+
+/* When menu is shown */
+.navbar-collapse.show {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* White with opacity */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Base navbar style */
+#main-header .navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+
+}
+
+/* When scrolled */
+#main-header.scrolled .navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.vote-btn {
+    background-image: linear-gradient(to right, #00a5ff, #62d6ff);
+    border-radius: 50px;
+    padding: 12px 24px !important;
+    color: white;
+    max-width: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 165, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.vote-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 165, 255, 0.4);
+    color: white;
+}
+
+/*banner css*/
+.main-banner {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8)0%, rgba(0, 165, 255, 0.08) 100%);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+
+}
+
+.main-banner h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #333;
+}
+
+.icon-one {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+}
+
+.icon-two {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 100px;
+}
+
+.icon-three {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 100px;
+}
+
+.icon-four {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+.main-banner h1 span {
+    background: linear-gradient(to right, #ff416c, #8e44ad, #3498db);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.main-banner p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*voting prcess css*/
+.login-card {
+    position: relative;
+    padding: 30px;
+    box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    min-height: 230px;
+    margin-top: -70px;
+    z-index: 9;
+
+
+}
+
+.login-card h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login-card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #606060;
+}
+
+/*About my guru*/
+.about h2 {
+    font-size: 38px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff416c, #8e44ad, #3498db);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 20px;
+}
+
+
+.about {
+
+    padding: 30px 0;
+}
+
+.about ul li span {
+    margin-right: 10px;
+}
+
+.about p {
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+.about ul li {
+    color: #606060;
+    margin: 5px 0;
+}
+
+.about-my-guru img {
+    box-shadow: 2px 20px 30px 0px rgba(20, 20, 20, 0.2);
+    border-radius: 5px;
+}
+
+/*Why vote matters*/
+
+
+.vote-matters h2 {
+    font-size: 38px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff416c, #8e44ad, #3498db);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 20px;
+
+
+}
+
+.vote-matters p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #606060;
+    margin:0;
+}
+
+
+.card-quotes {
+    border: none;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding:20px;
+
+}
+
+.card-quotes h5 {
+    font-weight: 600;
+}
+
+/*what people say*/
+
+
+.what-people-say{
+    background-color: #ddd;
+}
+.what-people-say h2{
+     font-size: 38px;
+    font-weight: bold;
+    
+}
+
+.what-people-say p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #606060;
+    
+}
+
+
+.carousel-control-custom {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.carousel-control-prev-custom {
+  left: 0;  /* Change from -20px to 0 */
+}
+
+.carousel-control-next-custom {
+  right: 0; /* Change from -20px to 0 */
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .testimonial-card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .testimonial-card {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+
+
+ /* footer css*/
+ .contact-area h1{
+    color:#00a5ff;
+ }   
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 0px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+.contact-area {
+    background: #e9f7ff;
+    color: #868c96;
+}
+
+footer p {
+   
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
